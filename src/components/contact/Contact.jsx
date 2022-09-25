@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import './contact.css'
 import {HiOutlineMail} from 'react-icons/hi'
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_uazo04n', 'template_kxno83j', form.current, 'qlQtEUVdH18vc5E8l')
+    
+    e.target.reset()
+  };
+
   return (
     <section id='contact'>
       <h5>Get In Touch</h5>
@@ -18,11 +30,11 @@ const Contact = () => {
           </article>
         </div>
         {/* END OF CONTACT OPTIONS */}
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Your Full Name' required/>
           <input type="email" name='email' placeholder='Your Email' required/>
           <textarea name="message" cols="30" rows="7" placeholder='Your Message' required></textarea>
-          <button type="submit" className='btn btn-primary'>Send Message</button>
+          <button type="submit" className='btn btn-primary' value="Send">Send Message</button>
         </form>
       </div>
     </section>
