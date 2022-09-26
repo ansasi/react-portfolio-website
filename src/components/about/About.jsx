@@ -21,22 +21,30 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
-              <small>1+ Years Working</small>
+              <small>
+                4+ Years Programming<br />
+                3+ Years Working in Backend<br />
+                1+ Years Working as Fullstack Developer
+              </small>
             </article>
-            <article className='about__card'>
+            {/* <article className='about__card'>
               <FiUsers className='about__icon'/>
               <h5>Clients</h5>
-              <small>200+ Clients Worldwide</small>
-            </article>
+              <small>
+                200+ Clients Worldwide
+              </small>
+            </article> */}
             <article className='about__card'>
               <MdOutlineTask className='about__icon'/>
               <h5>Experience</h5>
-              <small>80+ Completed projects</small>
+              <small>
+                10+ Completed projects
+              </small>
             </article>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quae maxime, molestias sit at possimus accusamus distinctio nihil! Fuga sequi libero porro neque sapiente qui, animi incidunt molestias reiciendis et?
+            Industrial engineer. In love with big data, programming and cloud.
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's talk</a>

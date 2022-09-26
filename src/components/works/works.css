@@ -1,10 +1,10 @@
 .container.works__container {
-    width: 50%;
+    width: 40%;
     padding-bottom: 4rem;
 }
 
 .company__image {
-    width: 25rem;
+    width: 30rem;
     height: auto;
     overflow: hidden;
     border: 0.3rem solid var(--color-primary-variant);
@@ -12,10 +12,6 @@
     margin: 0 auto 1rem;
     background-color: var(--color-white); 
 }
-
-/* .company__image img {
-    object-fit: cover;
-} */
 
 .company__name {
     font-size: 120%;

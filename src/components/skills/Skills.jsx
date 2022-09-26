@@ -16,35 +16,35 @@ const skills = () => {
               <BsCheckCircleFill className="skills__details-icon"/>
               <div>
                 <h4>HTML</h4>
-                <small className='text-light'>Advanced</small>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='skills__details'>
               <BsCheckCircleFill className="skills__details-icon"/>
               <div>
                 <h4>CSS</h4>
-                <small className='text-light'>Advanced</small>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='skills__details'>
               <BsCheckCircleFill className="skills__details-icon"/>
               <div>
                 <h4>JS</h4>
-                <small className='text-light'>Advanced</small>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='skills__details'>
               <BsCheckCircleFill className="skills__details-icon"/>
               <div>
                 <h4>Bootstrap</h4>
-                <small className='text-light'>Advanced</small>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='skills__details'>
               <BsCheckCircleFill className="skills__details-icon"/>
               <div>
                 <h4>React</h4>
-                <small className='text-light'>Advanced</small>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
           </div>
@@ -58,14 +58,14 @@ const skills = () => {
               <BsCheckCircleFill className="skills__details-icon"/>
               <div>
                 <h4>Python</h4>
-                <small className='text-light'>Advanced</small>
+                <small className='text-light'>Professional</small>
               </div>
             </article>
             <article className='skills__details'>
               <BsCheckCircleFill className="skills__details-icon"/>
               <div>
                 <h4>SQL</h4>
-                <small className='text-light'>Advanced</small>
+                <small className='text-light'>Professional</small>
               </div>
             </article>
             <article className='skills__details'>
@@ -86,7 +86,7 @@ const skills = () => {
               <BsCheckCircleFill className="skills__details-icon"/>
               <div>
                 <h4>C++</h4>
-                <small className='text-light'>Advanced</small>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
           </div>
