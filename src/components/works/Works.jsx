@@ -6,7 +6,7 @@ import WORK3 from '../../assets/work3.jpg'
 import WORK4 from '../../assets/work4.jpg'
 
 // core version + navigation, pagination modules:
-import { Autoplay, Pagination } from 'swiper';
+import { Autoplay, Pagination } from 'swiper/modules';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -48,28 +48,28 @@ const Works = () => {
       <h2>Work Experience</h2>
 
       <Swiper className="container works__container"
-      // install Swiper modules
-      modules={[Autoplay, Pagination]}
-      autoplay={{
-        delay: 10000,
-        disableOnInteraction: false,
-      }}
-      centeredSlides={true}
-      spaceBetween={40}
-      slidesPerView={1}
-      pagination={{ clickable: true }}>
+        // install Swiper modules
+        modules={[Autoplay, Pagination]}
+        autoplay={{
+          delay: 10000,
+          disableOnInteraction: false,
+        }}
+        centeredSlides={true}
+        spaceBetween={40}
+        slidesPerView={1}
+        pagination={{ clickable: true }}>
         {
-          data.map(({id, company, position, image}) => {
-              return (
-                <SwiperSlide key={id} className='work'>
-                  <div className="company__image">
-                    <img src={image} alt={company} />
-                  </div>
-                  <h5 className='company__name'>{company}</h5>
-                  <small className='position'>{position}</small>
-                </SwiperSlide>
-              )
-            }
+          data.map(({ id, company, position, image }) => {
+            return (
+              <SwiperSlide key={id} className='work'>
+                <div className="company__image">
+                  <img src={image} alt={company} />
+                </div>
+                <h5 className='company__name'>{company}</h5>
+                <small className='position'>{position}</small>
+              </SwiperSlide>
+            )
+          }
           )
         }
       </Swiper>
